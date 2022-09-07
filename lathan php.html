@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan PHP</title>
+</head>
+<body>
+        <h2>FORM BIODATA</h2>
+        <form method="post" action="latihan12pro.php">
+        <pre>
+        First Name   : <input type="text" size="30" maxlength="50" name="_nama"><br />
+        Gender       : <input type="radio" value="Laki-Laki" name="_gender">Laki-Laki
+                       <input type="radio" value="Permpuan" name="_gender" >Perempuan<br />
+        Hobby        : <input type="checkbox" value="Korespondensi" name="_hobby[]">Korespondensi
+                       <input type="checkbox" value="Traveling" name="_hobby[]">Traveling
+                       <input type="checkbox" value="Shopping" name="_hobby[]">Shopping<br />
+        Pendidikan   : <select name="_pendidikan">
+                       <option value="SD">SD</option>
+                       <option value="SMP">SMP</option>
+                       <option value="SMA">SMA</option>
+                       </select><br />
+        Alamat       : <textarea rows="3" cols="30" name="_alamat"></textarea><br />
+                       <input type="submit" value="Simpan" name="submit">
+        
+        </pre>
+        </form>
+    
+        
+    <form method="get" action="proses.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      
+        <input type="submit" name="box" value="ok">
+      </form>
+</body>
+
+</html>
